@@ -41,14 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
             urgence: document.getElementById('urgence').value
         };
 
-        // Validation : au moins un besoin doit être sélectionné
-        if (formData.besoin.length === 0) {
-            showError('Veuillez sélectionner au moins un besoin.');
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Envoyer ma demande →';
-            return;
-        }
-
         try {
             // Envoi vers le webhook
             const response = await fetch(WEBHOOK_URL, {
@@ -92,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showSuccess(responseData, formData) {
         let html = '';
 
-        // Afficher score si présent
+        // Afficher score si présent (y compris score=0)
         if (responseData.score !== undefined) {
             html += `<div class="score-display"><strong>Score:</strong> ${responseData.score}%</div>`;
         }
@@ -103,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Si pas de score/offre, afficher message par défaut
-        if (!responseData.score && !responseData.offre) {
+        if (responseData.score === undefined && !responseData.offre) {
             html += '<p>Prospect envoyé avec succès !</p>';
         }
 
