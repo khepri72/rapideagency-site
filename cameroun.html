@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapideAgency Afrique - Capture Prospect Cameroun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/afrique.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.png" alt="Logo RapideAgency">
+                </div>
+                <span>RapideAgency</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="afrique-form-section">
+            <div class="afrique-container">
+                <div class="section-header">
+                    <h2>Devenez Partenaire RapideAgency</h2>
+                    <p class="section-subtitle">Remplissez ce formulaire pour démarrer votre transformation digitale</p>
+                </div>
+
+                <form id="afriqueForm">
+                    <!-- Champs cachés -->
+                    <input type="hidden" id="agentId" name="agentId" value="DEFAULT">
+                    <input type="hidden" id="source" name="source" value="terrain">
+                    <input type="hidden" id="pays" name="pays" value="Cameroun">
+
+                    <div class="form-group">
+                        <label for="societe">Nom de la société *</label>
+                        <input type="text" id="societe" name="societe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">Nom du contact *</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">Numéro WhatsApp *</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+237 6XX XXX XXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email (optionnel)</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ville">Ville *</label>
+                        <select id="ville" name="ville" required>
+                            <option value="">Sélectionnez votre ville</option>
+                            <option value="Douala">Douala</option>
+                            <option value="Yaoundé">Yaoundé</option>
+                            <option value="Bafoussam">Bafoussam</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="secteur">Secteur d'activité *</label>
+                        <select id="secteur" name="secteur" required>
+                            <option value="">Sélectionnez votre secteur</option>
+                            <option value="Commerce">Commerce</option>
+                            <option value="Restauration">Restauration</option>
+                            <option value="Services">Services</option>
+                            <option value="Santé">Santé</option>
+                            <option value="Éducation">Éducation</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Vos besoins *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="besoin" value="WhatsApp Bot">
+                                <span>WhatsApp Bot</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="besoin" value="Site web">
+                                <span>Site web</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="besoin" value="Publicité">
+                                <span>Publicité</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="besoin" value="Automatisation">
+                                <span>Automatisation</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="besoin" value="Autre">
+                                <span>Autre</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget estimé *</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">Sélectionnez votre budget</option>
+                            <option value="<100k">&lt; 100k FCFA</option>
+                            <option value="100k-500k">100k - 500k FCFA</option>
+                            <option value=">500k">&gt; 500k FCFA</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgence">Urgence *</label>
+                        <select id="urgence" name="urgence" required>
+                            <option value="">Sélectionnez votre urgence</option>
+                            <option value="Immédiat">Immédiat</option>
+                            <option value="Cette semaine">Cette semaine</option>
+                            <option value="Ce mois">Ce mois</option>
+                            <option value="Information">Information</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-button" id="submitBtn">
+                        Envoyer ma demande →
+                    </button>
+
+                    <div id="errorMessage" class="error-message"></div>
+                </form>
+
+                <!-- Résultat succès -->
+                <div id="successContainer" class="success-container" style="display: none;">
+                    <div class="success-icon">✅</div>
+                    <h3>Prospect envoyé avec succès !</h3>
+                    <div id="successDetails"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 RapideAgency - Tous droits réservés</p>
+        <p>Cameroun | contact@rapideagency.com</p>
+    </footer>
+
+    <script src="assets/afrique.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,144 @@
+/* Styles spécifiques pour la page Cameroun */
+.afrique-form-section {
+    padding: 4rem 5%;
+    min-height: calc(100vh - 80px);
+    background: var(--light-gray);
+}
+
+.afrique-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.checkbox-label:hover {
+    border-color: var(--blue);
+    background: var(--light-gray);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-label span {
+    font-weight: normal;
+    user-select: none;
+}
+
+.checkbox-label input[type="checkbox"]:checked + span {
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.checkbox-label:has(input[type="checkbox"]:checked) {
+    border-color: var(--blue);
+    background: rgba(30, 90, 168, 0.05);
+}
+
+.error-message {
+    display: none;
+    background: var(--error-red);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.error-message.show {
+    display: block;
+}
+
+.success-container {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-gray);
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.success-container h3 {
+    color: var(--success-green);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+#successDetails {
+    text-align: left;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+#successDetails pre {
+    background: var(--light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+#successDetails .score-display,
+#successDetails .offre-display {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    border-left: 4px solid var(--orange);
+}
+
+#successDetails .score-display strong,
+#successDetails .offre-display strong {
+    color: var(--blue);
+}
+
+.submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .afrique-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .checkbox-group {
+        gap: 0.5rem;
+    }
+
+    .checkbox-label {
+        padding: 0.5rem;
+    }
+}
+
