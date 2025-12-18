@@ -8,12 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Lire les paramètres URL
     const urlParams = new URLSearchParams(window.location.search);
-    const agentId = urlParams.get('agent') || 'DEFAULT';
+    const agentCode = urlParams.get('agent') || null;
+    const agentName = urlParams.get('agentName') || null;
+    const partnerCode = urlParams.get('partner') || null;
+    const partnerName = urlParams.get('partnerName') || null;
     const source = urlParams.get('source') || 'terrain';
-
-    // Pré-remplir les champs cachés
-    document.getElementById('agentId').value = agentId;
-    document.getElementById('source').value = source;
 
     // Gestion de la soumission
     form.addEventListener('submit', async (e) => {
@@ -26,20 +25,28 @@ document.addEventListener('DOMContentLoaded', () => {
         successContainer.style.display = 'none';
 
         // Collecter les données du formulaire
-        const formData = {
-            agentId: document.getElementById('agentId').value,
-            source: document.getElementById('source').value,
+        const emailValue = document.getElementById('email').value.trim();
+        
+        const payload = {
+            agentCode: agentCode,
+            agentName: agentName,
+            partnerCode: partnerCode,
+            partnerName: partnerName,
+            pays: 'Cameroun',
+            ville: document.getElementById('ville').value,
             societe: document.getElementById('societe').value.trim(),
             contact: document.getElementById('contact').value.trim(),
             whatsapp: document.getElementById('whatsapp').value.trim(),
-            email: document.getElementById('email').value.trim() || '',
-            ville: document.getElementById('ville').value,
-            pays: 'Cameroun',
+            email: emailValue || null,
             secteur: document.getElementById('secteur').value,
             besoin: Array.from(document.querySelectorAll('input[name="besoin"]:checked')).map(cb => cb.value),
             budget: document.getElementById('budget').value,
-            urgence: document.getElementById('urgence').value
+            urgence: document.getElementById('urgence').value,
+            source: source
         };
+
+        // Logger le payload avant l'envoi
+        console.log('Payload à envoyer:', JSON.stringify(payload, null, 2));
 
         try {
             // Envoi vers le webhook
@@ -48,27 +55,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify(payload)
             });
 
             if (response.ok) {
                 // Succès
                 const responseData = await response.json().catch(() => ({}));
-                showSuccess(responseData, formData);
+                showSuccess(responseData, payload);
                 form.reset();
             } else {
                 // Erreur HTTP
                 const errorText = await response.text().catch(() => 'Erreur inconnue');
-                showError(`Erreur serveur (${response.status}): ${errorText}`);
+                const errorMsg = `Erreur serveur (${response.status}): ${errorText}`;
+                showError(errorMsg);
+                alert(`Erreur lors de l'envoi:\n\n${errorMsg}`);
             }
         } catch (error) {
             // Erreur réseau/CORS
-            if (error.name === 'TypeError' && error.message.includes('fetch')) {
-                showError('Erreur réseau ou CORS. Vérifiez votre connexion et que le webhook est accessible.');
-            } else {
-                showError(`Erreur: ${error.message}`);
-            }
             console.error('Erreur lors de l\'envoi:', error);
+            let errorMsg = '';
+            if (error.name === 'TypeError' && error.message.includes('fetch')) {
+                errorMsg = 'Erreur réseau ou CORS. Vérifiez votre connexion et que le webhook est accessible.';
+            } else {
+                errorMsg = `Erreur: ${error.message}`;
+            }
+            showError(errorMsg);
+            alert(`Erreur réseau:\n\n${errorMsg}\n\nVérifiez votre connexion internet et réessayez.`);
         } finally {
             submitBtn.disabled = false;
             submitBtn.textContent = 'Envoyer ma demande →';
