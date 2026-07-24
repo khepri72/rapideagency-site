@@ -94,6 +94,7 @@ a:hover {
 }
 
 .nav {
+  position: relative;
   max-width: calc(var(--max) + 4rem);
   margin: 0 auto;
   min-height: var(--header-h);
