@@ -3,253 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RapideAgency - Automatisation IA pour PME Belges</title>
+    <meta name="description" content="RapideAgency transforme les expertises, les processus et les savoir-faire en systèmes numériques et agents IA métier, contrôlés et réutilisables.">
+    <title>RapideAgency — Systèmes numériques et agents IA métier</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-    <!-- Header -->
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigation principale">
             <a href="#accueil" class="logo">
-                <div class="logo-icon">
-                    <img src="assets/logo.png" alt="Logo RapideAgency">
-                </div>
+                <img src="assets/logo.png" alt="" width="40" height="40">
                 <span>RapideAgency</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#solution">Solution</a></li>
-                <li><a href="#temoignages">Témoignages</a></li>
-                <li><a href="#contact-final">Contact</a></li>
-                <li><a href="#diagnostic" class="cta-button">Diagnostic Gratuit</a></li>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+            </button>
+            <ul id="nav-menu" class="nav-links">
+                <li><a href="#voies">Approches</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#agents">Agents IA</a></li>
+                <li><a href="#approche">Méthode</a></li>
+                <li><a href="#validation">Contrôle</a></li>
+                <li><a class="nav-cta" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démo</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
+    <main id="contenu">
         <section class="hero" id="accueil">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Boostez votre PME avec l'IA.<br>Économisez <span class="highlight">10h/semaine.</span></h1>
-                    <p>Nous automatisons vos tâches répétitives pour que vous puissiez vous concentrer sur votre croissance. Diagnostic gratuit et personnalisé.</p>
-                    <div class="hero-buttons">
-                        <a href="#diagnostic" class="cta-button">Recevoir mon diagnostic →</a>
-                    </div>
-                    <div class="hero-subtext">
-                        <span>✓ En 5 minutes</span>
-                        <span>✓ 100% gratuit</span>
-                        <span>✓ Résultats immédiats</span>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Dashboard d'analyse de données">
+            <div class="hero-inner">
+                <p class="brand-mark">RapideAgency</p>
+                <h1>Transformer les expertises et les savoir-faire en systèmes numériques et agents IA métier, contrôlés et réutilisables.</h1>
+                <p class="hero-lead">Nous aidons formateurs, consultants, experts métiers, entreprises, cabinets, écoles, ONG et organisations à transmettre leur expertise ou à déployer un agent IA utile, avec une validation humaine sur les actions sensibles.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démonstration</a>
+                    <a class="btn btn-secondary" href="#voies">Découvrir les deux voies</a>
                 </div>
             </div>
         </section>
 
-        <!-- Problems Section -->
-        <section class="problems">
-            <h2>Vous perdez du temps sur des tâches sans valeur ajoutée ?</h2>
-            <p class="section-subtitle">Ces problèmes vous semblent-ils familiers ?</p>
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">⏰</div>
-                    <h3>Saisie manuelle répétitive</h3>
-                    <p>Vos employés perdent des heures à copier-coller les mêmes données dans différents systèmes (CRM, Excel, facturation...).</p>
-                    <p class="impact">Impact : Jusqu'à 15h/semaine perdues</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">⚠️</div>
-                    <h3>Suivi client désorganisé</h3>
-                    <p>Les demandes clients s'accumulent dans vos emails, certaines passent à travers les mailles du filet, impactant votre réputation.</p>
-                    <p class="impact">Impact : Délais de réponse longs</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">📄</div>
-                    <h3>Rapports chronophages</h3>
-                    <p>Créer des rapports hebdomadaires ou mensuels est un travail manuel, répétitif et sujet aux erreurs.</p>
-                    <p class="impact">Impact : Décisions basées sur des données obsolètes</p>
+        <section class="section" id="voies">
+            <div class="section-inner">
+                <h2>Deux façons de construire avec RapideAgency</h2>
+                <p class="section-intro">Selon votre besoin, nous construisons soit un dispositif de transmission d’expertise, soit un agent IA métier adapté à votre contexte.</p>
+                <div class="path-grid">
+                    <a class="path-card" href="#expertise">
+                        <h3>Transformer et transmettre une expertise</h3>
+                        <p>Rendre un savoir-faire accessible, structuré et réutilisable, sans le diluer.</p>
+                        <span class="path-link">Voir cette voie</span>
+                    </a>
+                    <a class="path-card" href="#agents">
+                        <h3>Déployer un agent IA métier</h3>
+                        <p>Mettre en place un agent utile au quotidien, encadré et vérifié avant les actions sensibles.</p>
+                        <span class="path-link">Voir cette voie</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Solution Section -->
-        <section class="features" id="solution">
-            <div class="section-header">
-                <h2>Notre Solution : L'Automatisation <span class="highlight">Intelligente</span></h2>
-                <p class="section-subtitle">Une approche scientifique pour transformer votre entreprise. Obtenez des résultats concrets en quelques clics.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>1. Analyse Gratuite en 5 Minutes</h3>
-                    <p>Notre IA analyse votre situation et identifie les processus à automatiser en priorité pour un ROI maximal.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📈</div>
-                    <h3>2. Diagnostic Personnalisé</h3>
-                    <p>Recevez une roadmap claire avec les actions à mener, les gains de temps estimés et le budget nécessaire.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>3. Implémentation Rapide</h3>
-                    <p>Nous déployons les automatisations en 2 à 4 semaines pour que vous puissiez voir les bénéfices immédiatement.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="stats">
-            <div class="stats-grid">
-                <div class="stat">
-                    <h3>10h</h3>
-                    <p>gagnées par semaine en moyenne</p>
-                </div>
-                <div class="stat">
-                    <h3>300%</h3>
-                    <p>ROI moyen sur 12 mois</p>
-                </div>
-                <div class="stat">
-                    <h3>-40%</h3>
-                    <p>d'erreurs de saisie manuelle</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- CORRECTION : Section Témoignages complète ajoutée -->
-        <section class="testimonials" id="temoignages">
-            <div class="section-header">
-                <h2>Ils nous font confiance</h2>
-                <p class="section-subtitle">Des PME comme la vôtre ont déjà transformé leur productivité.</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-avatar">
-                        <img src="https://i.pravatar.cc/150?img=1" alt="Avatar Marie Dubois">
-                    </div>
-                    <h4>Marie Dubois</h4>
-                    <p class="testimonial-role">Directrice - Cabinet Comptable Dubois</p>
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-quote">"Le diagnostic gratuit m'a ouvert les yeux. Nous avons automatisé la saisie des factures et gagné 12h par semaine. Le ROI a été atteint en 2 mois !"</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-avatar">
-                        <img src="https://i.pravatar.cc/150?img=3" alt="Avatar Pierre Van Der Berg">
-                    </div>
-                    <h4>Pierre Van Der Berg</h4>
-                    <p class="testimonial-role">CEO - LogiTrans Belgium</p>
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-quote">"L'automatisation de notre gestion des stocks et des commandes nous a permis de nous concentrer sur la croissance. Excellent accompagnement !"</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-avatar">
-                        <img src="https://i.pravatar.cc/150?img=5" alt="Avatar Sophie Lecomte">
-                    </div>
-                    <h4>Sophie Lecomte</h4>
-                    <p class="testimonial-role">Fondatrice - TechStart Solutions</p>
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-quote">"En 3 semaines, nos processus de vente étaient optimisés. Les résultats sont incroyables, nous avons augmenté nos ventes de 40%."</p>
-                </div>
+        <section class="section section-alt" id="expertise">
+            <div class="section-inner">
+                <h2>Transformer une expertise</h2>
+                <p class="section-intro">Pour les personnes et organisations qui souhaitent transmettre un métier, une méthode ou un savoir-faire de façon claire et durable.</p>
+                <ul class="feature-list">
+                    <li>
+                        <h3>Parcours autonomes</h3>
+                        <p>Des chemins d’apprentissage progressifs, pensés pour être suivis sans accompagnement permanent.</p>
+                    </li>
+                    <li>
+                        <h3>Mini-académies privées</h3>
+                        <p>Des espaces de formation réservés à vos équipes, clients ou partenaires.</p>
+                    </li>
+                    <li>
+                        <h3>Vidéos pédagogiques</h3>
+                        <p>Des contenus structurés pour expliquer, démontrer et ancrer les gestes essentiels.</p>
+                    </li>
+                    <li>
+                        <h3>Coachs IA</h3>
+                        <p>Des assistants qui relaient votre expertise pour répondre, guider et accompagner, dans un cadre défini.</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <!-- Diagnostic Form Section -->
-        <section class="diagnostic" id="diagnostic">
-            <div class="diagnostic-container">
-                <div class="section-header">
-                    <h2>Obtenez votre Diagnostic Gratuit</h2>
-                    <p class="section-subtitle">Répondez à 5 questions et découvrez votre potentiel d'automatisation.</p>
-                </div>
-                <<form id="diagnosticForm" 
-      action="https://automate.rapideagency.com/webhook/54d51f7f-4e80-46b0-ad77-744d7fdf4dca" 
-      method="POST" 
-      target="n8n_iframe">
-    
-    <div class="form-group">
-        <label for="company">Nom de l'entreprise *</label>
-        <input type="text" id="company" name="company" required>
-    </div>
-
-    <div class="form-group">
-        <label for="email">Email professionnel *</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="form-group">
-        <label for="sector">Secteur d'activité *</label>
-        <select id="sector" name="sector" required>
-            <option value="">Sélectionnez votre secteur</option>
-            <option value="E-commerce">E-commerce</option>
-            <option value="Services professionnels">Services professionnels (comptable, avocat...)</option>
-            <option value="Transport/Logistique">Transport/Logistique</option>
-            <option value="Industrie">Industrie</option>
-            <option value="Construction">Construction</option>
-            <option value="Santé">Santé</option>
-            <option value="Restauration">Restauration</option>
-            <option value="Immobilier">Immobilier</option>
-            <option value="Commerce de détail">Commerce de détail</option>
-            <option value="Autre">Autre</option>
-        </select>
-    </div>
-
-    <div class="form-group">
-        <label for="employees">Nombre d'employés *</label>
-        <select id="employees" name="employees" required>
-            <option value="">Sélectionnez</option>
-            <option value="1-5">1-5</option>
-            <option value="6-15">6-15</option>
-            <option value="16-50">16-50</option>
-            <option value="51-100">51-100</option>
-            <option value="100+">Plus de 100</option>
-        </select>
-    </div>
-
-    <div class="form-group">
-        <label for="processes">Quels processus souhaitez-vous automatiser ? *</label>
-        <textarea id="processes" name="processes" rows="4" placeholder="Ex: Facturation, gestion des emails, suivi clients, rapports, inventaire..." required></textarea>
-    </div>
-
-    <!-- Champ caché pour envoyer le score -->
-    <input type="hidden" id="score" name="score">
-
-    <button type="submit" class="submit-button">
-        Calculer mon potentiel d'automatisation →
-    </button>
-</form>
-
-<!-- Iframe invisible pour envoi silencieux à n8n -->
-<iframe name="n8n_iframe" style="display:none;"></iframe>
->
-                <div class="spinner-container"><div class="spinner"></div></div>
-                <div class="results" id="results"><h3>Votre Potentiel d'Automatisation</h3><div class="score-circle" style="--score: 0%"><div class="score-inner"><span id="scoreValue">0%</span></div></div><div id="recommendation"></div><div id="package"></div><a href="#contact-final" class="cta-button" id="cta-appel">Réserver un appel stratégique gratuit →</a></div>
-                <div class="success-message" id="successMessage">✓ Diagnostic envoyé avec succès ! Vérifiez votre boîte email.</div>
+        <section class="section" id="agents">
+            <div class="section-inner">
+                <h2>Déployer un agent IA métier</h2>
+                <p class="section-intro">Pour les organisations qui veulent un agent utile dans un processus réel, avec un contrôle humain là où cela compte.</p>
+                <ul class="feature-list">
+                    <li>
+                        <h3>Agent de qualification</h3>
+                        <p>Clarifie les demandes, classe les besoins et prépare un premier niveau d’information fiable.</p>
+                    </li>
+                    <li>
+                        <h3>Agent d’accompagnement</h3>
+                        <p>Guide les utilisateurs étape par étape dans un parcours ou un processus métier.</p>
+                    </li>
+                    <li>
+                        <h3>Agent d’information</h3>
+                        <p>Répond à partir de vos contenus, procédures et connaissances validées.</p>
+                    </li>
+                    <li>
+                        <h3>Agent adapté à un secteur</h3>
+                        <p>Conçu autour de votre vocabulaire, de vos règles et de vos priorités métier.</p>
+                    </li>
+                    <li>
+                        <h3>Validation humaine</h3>
+                        <p>Les actions sensibles restent soumises à une validation humaine avant exécution.</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <!-- Contact Form -->
-        <section class="contact-section" id="contact-final">
-            <div class="contact-container">
-                <h2>Réservez votre Appel Stratégique</h2>
-                <p class="section-subtitle">Discutons de votre diagnostic et définissons une roadmap claire.</p>
-                <form id="contactForm">
-                    <div class="form-group"><label for="contactName">Nom complet *</label><input type="text" id="contactName" name="contactName" required></div>
-                    <div class="form-group"><label for="contactEmail">Email *</label><input type="email" id="contactEmail" name="contactEmail" required></div>
-                    <div class="form-group"><label for="contactMessage">Message (optionnel)</label><textarea id="contactMessage" name="contactMessage" rows="3" placeholder="Dites-nous en plus sur vos besoins..."></textarea></div>
-                    <button type="submit" class="submit-button">Réserver mon appel gratuit →</button>
-                    <div class="success-message" id="contactSuccessMessage">✓ Demande reçue ! Nous vous contacterons sous 24h.</div>
-                </form>
+        <section class="section section-alt" id="approche">
+            <div class="section-inner">
+                <h2>Notre approche</h2>
+                <p class="section-intro">Une méthode progressive, concrète et contrôlée. Nous partons de votre réalité métier, pas d’une promesse technologique.</p>
+                <ol class="method-list">
+                    <li>
+                        <span class="method-step">1</span>
+                        <div>
+                            <h3>Comprendre le besoin</h3>
+                            <p>Clarifier l’objectif, le public et le résultat attendu.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-step">2</span>
+                        <div>
+                            <h3>Cartographier l’expertise ou le processus</h3>
+                            <p>Identifier ce qui doit être transmis, automatisé ou assisté.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-step">3</span>
+                        <div>
+                            <h3>Concevoir le système</h3>
+                            <p>Définir la structure, les règles et les points de contrôle.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-step">4</span>
+                        <div>
+                            <h3>Construire de façon progressive</h3>
+                            <p>Assembler un premier dispositif utile, lisible et testable.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-step">5</span>
+                        <div>
+                            <h3>Valider avec vous</h3>
+                            <p>Vérifier la qualité, la pertinence et les limites d’usage.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-step">6</span>
+                        <div>
+                            <h3>Déployer en conditions réelles</h3>
+                            <p>Mettre en service dans un cadre maîtrisé.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="method-step">7</span>
+                        <div>
+                            <h3>Transmettre et ajuster</h3>
+                            <p>Documenter, former et améliorer selon les retours d’usage.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>© 2025 RapideAgency - Tous droits réservés</p>
-            <p>Aalst, BE | contact@rapideagency.com</p>
-        </footer>
+        <section class="section" id="validation">
+            <div class="section-inner narrow">
+                <h2>Validation humaine</h2>
+                <p class="section-intro">L’IA peut accélérer le travail. Elle ne remplace pas le jugement professionnel. Chez RapideAgency, les actions sensibles restent soumises à une validation humaine avant d’être exécutées.</p>
+                <ul class="plain-list">
+                    <li>Des règles d’usage claires</li>
+                    <li>Des limites explicites</li>
+                    <li>Un contrôle humain là où la décision engage</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section cta-section" id="demo">
+            <div class="section-inner narrow">
+                <h2>Voir ce que cela peut donner pour vous</h2>
+                <p class="section-intro">Réservez une démonstration personnalisée. Nous regardons ensemble votre contexte, sans formulaire et sans engagement.</p>
+                <a class="btn btn-primary" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démonstration</a>
+            </div>
+        </section>
     </main>
-    
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <strong>RapideAgency</strong>
+                <p>Systèmes numériques et agents IA métier, contrôlés et réutilisables.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+                <a href="mailto:elise@rapideagency.com">elise@rapideagency.com</a>
+            </div>
+            <p class="footer-copy">© 2026 RapideAgency. Tous droits réservés.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
