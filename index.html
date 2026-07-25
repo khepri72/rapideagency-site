@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RapideAgency transforme les expertises, les processus et les savoir-faire en systèmes numériques et agents IA métier, contrôlés et réutilisables.">
+    <meta name="description" content="RapideAgency transforme vos savoir-faire, vos contenus et vos processus en parcours numériques et agents IA métier, conçus pour transmettre, accompagner et agir dans un cadre maîtrisé.">
     <title>RapideAgency — Systèmes numériques et agents IA métier</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RapideAgency — Votre expertise devient un système durable.">
+    <meta property="og:description" content="Parcours numériques et agents IA métier, conçus pour transmettre, accompagner et agir dans un cadre maîtrisé.">
+    <meta property="og:image" content="assets/og-rapideagency.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,21 +19,26 @@
     <header class="site-header">
         <nav class="nav" aria-label="Navigation principale">
             <a href="#accueil" class="logo">
-                <img src="assets/logo.png" alt="" width="40" height="40">
-                <span>RapideAgency</span>
+                <img src="assets/logo-header.png" alt="RapideAgency" width="170" height="51">
             </a>
+
+            <a class="nav-academy-mobile" href="https://academy.rapideagency.app/cs/ep9kj" target="_blank" rel="noopener noreferrer">Académie</a>
+
             <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
                 <span class="nav-toggle-bar" aria-hidden="true"></span>
                 <span class="nav-toggle-bar" aria-hidden="true"></span>
                 <span class="nav-toggle-bar" aria-hidden="true"></span>
             </button>
+
             <ul id="nav-menu" class="nav-links">
-                <li><a href="#voies">Approches</a></li>
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#agents">Agents IA</a></li>
-                <li><a href="#approche">Méthode</a></li>
-                <li><a href="#validation">Contrôle</a></li>
-                <li><a class="nav-cta" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démo</a></li>
+                <li><a href="https://academy.rapideagency.app/cs/ep9kj" target="_blank" rel="noopener noreferrer">Académie</a></li>
+                <li><a href="#methode">Méthode</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li>
+                    <a class="nav-cta" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démonstration</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -35,164 +46,192 @@
     <main id="contenu">
         <section class="hero" id="accueil">
             <div class="hero-inner">
-                <p class="brand-mark">RapideAgency</p>
-                <h1>Transformer les expertises et les savoir-faire en systèmes numériques et agents IA métier, contrôlés et réutilisables.</h1>
-                <p class="hero-lead">Nous aidons formateurs, consultants, experts métiers, entreprises, cabinets, écoles, ONG et organisations à transmettre leur expertise ou à déployer un agent IA utile, avec une validation humaine sur les actions sensibles.</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démonstration</a>
-                    <a class="btn btn-secondary" href="#voies">Découvrir les deux voies</a>
+                <div class="hero-copy">
+                    <p class="hero-badge">Digitalisation des expertises et agents IA métier</p>
+                    <h1>Votre expertise devient un système qui travaille à vos côtés.</h1>
+                    <p class="hero-lead">RapideAgency transforme vos savoir-faire, vos contenus et vos processus en parcours numériques et agents IA métier, conçus pour transmettre, accompagner et agir dans un cadre maîtrisé.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démonstration</a>
+                        <a class="btn btn-secondary" href="#solutions">Découvrir nos solutions</a>
+                    </div>
+                    <p class="hero-meta">Conception sur mesure · Validation humaine · Déploiement progressif</p>
+                </div>
+                <div class="hero-visual section-visual">
+                    <img
+                        class="section-visual__image"
+                        src="assets/hero-expertise.png"
+                        alt="Expertise professionnelle transformée en système numérique et agent IA métier RapideAgency"
+                        width="1672"
+                        height="941"
+                        decoding="async"
+                        fetchpriority="high"
+                    >
                 </div>
             </div>
         </section>
 
-        <section class="section" id="voies">
+        <section class="section" id="solutions">
             <div class="section-inner">
-                <h2>Deux façons de construire avec RapideAgency</h2>
-                <p class="section-intro">Selon votre besoin, nous construisons soit un dispositif de transmission d’expertise, soit un agent IA métier adapté à votre contexte.</p>
-                <div class="path-grid">
-                    <a class="path-card" href="#expertise">
-                        <h3>Transformer et transmettre une expertise</h3>
-                        <p>Rendre un savoir-faire accessible, structuré et réutilisable, sans le diluer.</p>
-                        <span class="path-link">Voir cette voie</span>
-                    </a>
-                    <a class="path-card" href="#agents">
+                <h2>Deux façons de faire travailler votre expertise autrement</h2>
+                <div class="pillars">
+                    <article class="pillar pillar-light">
+                        <h3>Digitaliser et transmettre une expertise</h3>
+                        <p>Transformez ce que vous enseignez, expliquez ou réalisez déjà en un dispositif structuré que vos apprenants, vos équipes ou vos clients peuvent utiliser avec davantage d’autonomie.</p>
+                        <p class="pillar-tags">parcours autonomes · mini-académies privées · vidéos pédagogiques · coachs IA.</p>
+                    </article>
+                    <article class="pillar pillar-dark">
                         <h3>Déployer un agent IA métier</h3>
-                        <p>Mettre en place un agent utile au quotidien, encadré et vérifié avant les actions sensibles.</p>
-                        <span class="path-link">Voir cette voie</span>
-                    </a>
+                        <p>Confiez à un agent encadré les demandes répétitives, l’orientation des utilisateurs et l’accès à vos connaissances, tout en conservant le contrôle sur les actions sensibles.</p>
+                        <p class="pillar-tags">qualification · accompagnement · information · assistance métier.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt" id="expertise">
-            <div class="section-inner">
-                <h2>Transformer une expertise</h2>
-                <p class="section-intro">Pour les personnes et organisations qui souhaitent transmettre un métier, une méthode ou un savoir-faire de façon claire et durable.</p>
-                <ul class="feature-list">
-                    <li>
-                        <h3>Parcours autonomes</h3>
-                        <p>Des chemins d’apprentissage progressifs, pensés pour être suivis sans accompagnement permanent.</p>
-                    </li>
-                    <li>
-                        <h3>Mini-académies privées</h3>
-                        <p>Des espaces de formation réservés à vos équipes, clients ou partenaires.</p>
-                    </li>
-                    <li>
-                        <h3>Vidéos pédagogiques</h3>
-                        <p>Des contenus structurés pour expliquer, démontrer et ancrer les gestes essentiels.</p>
-                    </li>
-                    <li>
-                        <h3>Coachs IA</h3>
-                        <p>Des assistants qui relaient votre expertise pour répondre, guider et accompagner, dans un cadre défini.</p>
-                    </li>
-                </ul>
+        <section class="section" id="expertise">
+            <div class="section-inner expertise-layout">
+                <div class="expertise-intro">
+                    <p class="section-label">Expertise</p>
+                    <h2>Votre savoir ne devrait pas dépendre uniquement de votre présence.</h2>
+                    <p class="section-intro">Nous structurons votre expertise pour qu’elle puisse être comprise, transmise et utilisée même lorsque vous n’êtes pas physiquement disponible.</p>
+                </div>
+                <div class="expertise-panel">
+                    <dl class="expertise-list">
+                        <div>
+                            <dt>Un parcours structuré</dt>
+                            <dd>Pour guider l’apprenant étape par étape.</dd>
+                        </div>
+                        <div>
+                            <dt>Une académie privée</dt>
+                            <dd>Pour réunir formations, ressources et communauté.</dd>
+                        </div>
+                        <div>
+                            <dt>Une bibliothèque pédagogique</dt>
+                            <dd>Pour rendre vos contenus accessibles durablement.</dd>
+                        </div>
+                        <div>
+                            <dt>Un coach IA</dt>
+                            <dd>Pour répondre et accompagner à partir de votre expertise validée.</dd>
+                        </div>
+                    </dl>
+                </div>
             </div>
         </section>
 
-        <section class="section" id="agents">
-            <div class="section-inner">
-                <h2>Déployer un agent IA métier</h2>
-                <p class="section-intro">Pour les organisations qui veulent un agent utile dans un processus réel, avec un contrôle humain là où cela compte.</p>
-                <ul class="feature-list">
-                    <li>
-                        <h3>Agent de qualification</h3>
-                        <p>Clarifie les demandes, classe les besoins et prépare un premier niveau d’information fiable.</p>
-                    </li>
-                    <li>
-                        <h3>Agent d’accompagnement</h3>
-                        <p>Guide les utilisateurs étape par étape dans un parcours ou un processus métier.</p>
-                    </li>
-                    <li>
-                        <h3>Agent d’information</h3>
-                        <p>Répond à partir de vos contenus, procédures et connaissances validées.</p>
-                    </li>
-                    <li>
-                        <h3>Agent adapté à un secteur</h3>
-                        <p>Conçu autour de votre vocabulaire, de vos règles et de vos priorités métier.</p>
-                    </li>
-                    <li>
-                        <h3>Validation humaine</h3>
-                        <p>Les actions sensibles restent soumises à une validation humaine avant exécution.</p>
-                    </li>
-                </ul>
+        <section class="section agents-section" id="agents">
+            <div class="section-inner agents-layout">
+                <div class="agents-copy">
+                    <h2>Un agent IA utile commence par un vrai besoin métier.</h2>
+                    <p class="section-intro agents-intro">Nous concevons des agents qui interviennent dans un processus clairement défini : informer, qualifier, accompagner ou assister, sans leur confier aveuglément les décisions qui engagent votre organisation.</p>
+                    <ul class="agents-grid">
+                        <li>agents de qualification</li>
+                        <li>agents d’information</li>
+                        <li>agents d’accompagnement</li>
+                        <li>agents adaptés à un secteur</li>
+                    </ul>
+                    <p class="agents-note">validation humaine avant les actions sensibles.</p>
+                </div>
+                <div class="agents-visual section-visual">
+                    <img
+                        class="section-visual__image"
+                        src="assets/agent-ia-metier.png"
+                        alt="Agent IA métier accompagnant un processus professionnel avec validation humaine"
+                        width="1672"
+                        height="941"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
             </div>
         </section>
 
-        <section class="section section-alt" id="approche">
+        <section class="section" id="academie">
             <div class="section-inner">
-                <h2>Notre approche</h2>
-                <p class="section-intro">Une méthode progressive, concrète et contrôlée. Nous partons de votre réalité métier, pas d’une promesse technologique.</p>
-                <ol class="method-list">
-                    <li>
-                        <span class="method-step">1</span>
-                        <div>
-                            <h3>Comprendre le besoin</h3>
-                            <p>Clarifier l’objectif, le public et le résultat attendu.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="method-step">2</span>
-                        <div>
-                            <h3>Cartographier l’expertise ou le processus</h3>
-                            <p>Identifier ce qui doit être transmis, automatisé ou assisté.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="method-step">3</span>
-                        <div>
-                            <h3>Concevoir le système</h3>
-                            <p>Définir la structure, les règles et les points de contrôle.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="method-step">4</span>
-                        <div>
-                            <h3>Construire de façon progressive</h3>
-                            <p>Assembler un premier dispositif utile, lisible et testable.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="method-step">5</span>
-                        <div>
-                            <h3>Valider avec vous</h3>
-                            <p>Vérifier la qualité, la pertinence et les limites d’usage.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="method-step">6</span>
-                        <div>
-                            <h3>Déployer en conditions réelles</h3>
-                            <p>Mettre en service dans un cadre maîtrisé.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="method-step">7</span>
-                        <div>
-                            <h3>Transmettre et ajuster</h3>
-                            <p>Documenter, former et améliorer selon les retours d’usage.</p>
-                        </div>
-                    </li>
+                <div class="academy-block">
+                    <div class="academy-copy">
+                        <h2>Développez vos compétences avec l’Académie RapideAgency</h2>
+                        <p>Découvrez des parcours pratiques pour comprendre les nouveaux usages de l’intelligence artificielle, expérimenter les outils et transformer progressivement votre manière de travailler.</p>
+                        <a class="btn btn-primary" href="https://academy.rapideagency.app/cs/ep9kj" target="_blank" rel="noopener noreferrer">Découvrir l’Académie</a>
+                    </div>
+                    <div class="academy-visual section-visual">
+                        <img
+                            class="section-visual__image"
+                            src="assets/academie-rapideagency.png"
+                            alt="Académie numérique RapideAgency avec parcours de formation, communauté et accompagnement IA"
+                            width="1672"
+                            height="941"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="methode">
+            <div class="section-inner">
+                <div class="method-top">
+                    <div class="method-intro">
+                        <h2>Une méthode pour construire utile, progressivement et durablement.</h2>
+                    </div>
+                    <div class="method-visual section-visual">
+                        <img
+                            class="section-visual__image"
+                            src="assets/methode-rapideagency.png"
+                            alt="Méthode RapideAgency construite progressivement de l’analyse au déploiement"
+                            width="1672"
+                            height="941"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                </div>
+                <ol class="method-timeline">
+                    <li><span class="method-num">1.</span> Comprendre le besoin</li>
+                    <li><span class="method-num">2.</span> Cartographier l’expertise ou le processus</li>
+                    <li><span class="method-num">3.</span> Concevoir le système</li>
+                    <li><span class="method-num">4.</span> Construire une première version utile</li>
+                    <li><span class="method-num">5.</span> Tester et valider avec vous</li>
+                    <li><span class="method-num">6.</span> Déployer en conditions réelles</li>
+                    <li><span class="method-num">7.</span> Transmettre, mesurer et ajuster</li>
                 </ol>
             </div>
         </section>
 
         <section class="section" id="validation">
-            <div class="section-inner narrow">
-                <h2>Validation humaine</h2>
-                <p class="section-intro">L’IA peut accélérer le travail. Elle ne remplace pas le jugement professionnel. Chez RapideAgency, les actions sensibles restent soumises à une validation humaine avant d’être exécutées.</p>
-                <ul class="plain-list">
-                    <li>Des règles d’usage claires</li>
-                    <li>Des limites explicites</li>
-                    <li>Un contrôle humain là où la décision engage</li>
+            <div class="section-inner validation-layout">
+                <div class="validation-copy">
+                    <h2>L’intelligence artificielle agit dans un cadre défini par l’humain.</h2>
+                    <div class="validation-mark" aria-hidden="true">
+                        <span class="validation-bar"></span>
+                        <span class="validation-orbit"></span>
+                        <span class="validation-core"></span>
+                    </div>
+                </div>
+                <div class="validation-panel">
+                    <p>Nous définissons avec vous ce que l’agent peut faire, ce qu’il ne doit jamais faire seul et les situations qui nécessitent une validation. La technologie accélère l’exécution ; la responsabilité reste humaine.</p>
+                </div>
+                <ul class="validation-list">
+                    <li>règles d’usage claires</li>
+                    <li>limites explicites</li>
+                    <li>validation avant les décisions engageantes</li>
+                    <li>supervision et amélioration continue</li>
                 </ul>
             </div>
         </section>
 
-        <section class="section cta-section" id="demo">
+        <section class="section" id="a-propos">
+            <div class="section-inner about-layout">
+                <h2>Nous construisons des systèmes autour de ce que vous savez déjà faire.</h2>
+                <p>RapideAgency accompagne les professionnels et les organisations dont l’expertise, les connaissances ou les processus dépendent encore trop de leur présence. Notre rôle est de structurer ce savoir, de le rendre transmissible et de concevoir les outils numériques ou agents IA qui lui permettent de circuler durablement.</p>
+            </div>
+        </section>
+
+        <section class="section cta-final" id="demo">
             <div class="section-inner narrow">
-                <h2>Voir ce que cela peut donner pour vous</h2>
-                <p class="section-intro">Réservez une démonstration personnalisée. Nous regardons ensemble votre contexte, sans formulaire et sans engagement.</p>
-                <a class="btn btn-primary" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démonstration</a>
+                <h2>Voyons ce que votre expertise peut devenir.</h2>
+                <p>Partons de votre réalité métier et identifions le premier système utile à construire.</p>
+                <a class="btn btn-orange" href="https://calendly.com/elisenyemeck/demonstrationpersonnaliseerapideagency" target="_blank" rel="noopener noreferrer">Réserver une démonstration personnalisée</a>
             </div>
         </section>
     </main>
@@ -200,15 +239,20 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <strong>RapideAgency</strong>
-                <p>Systèmes numériques et agents IA métier, contrôlés et réutilisables.</p>
+                <a href="#accueil" class="footer-logo">
+                    <img src="assets/logo-header.png" alt="RapideAgency" width="150" height="45">
+                </a>
+                <p><strong>RapideAgency</strong><br>Systèmes numériques et agents IA métier.</p>
             </div>
             <div class="footer-links">
+                <a href="#expertise">Expertise</a>
+                <a href="#agents">Agents IA</a>
+                <a href="https://academy.rapideagency.app/cs/ep9kj" target="_blank" rel="noopener noreferrer">Académie</a>
+                <a href="#methode">Méthode</a>
                 <a href="mentions-legales.html">Mentions légales</a>
                 <a href="confidentialite.html">Confidentialité</a>
-                <a href="mailto:elise@rapideagency.com">elise@rapideagency.com</a>
+                <a href="mailto:contact@rapideagency.com">contact@rapideagency.com</a>
             </div>
-            <p class="footer-copy">© 2026 RapideAgency. Tous droits réservés.</p>
         </div>
     </footer>
 

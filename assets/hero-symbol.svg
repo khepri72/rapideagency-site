@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" fill="none" role="img" aria-labelledby="heroSymbolTitle">
+  <title id="heroSymbolTitle">Symbole RapideAgency</title>
+  <!-- Soft circular orbit -->
+  <circle cx="220" cy="220" r="152" stroke="#9BB8E8" stroke-width="2.5" opacity="0.95"/>
+  <!-- Orange elliptical orbits -->
+  <ellipse cx="220" cy="220" rx="186" ry="96" stroke="#F58C49" stroke-width="3.25" transform="rotate(-30 220 220)"/>
+  <ellipse cx="220" cy="220" rx="170" ry="86" stroke="#F58C49" stroke-width="2.25" opacity="0.72" transform="rotate(48 220 220)"/>
+  <!-- Geometric ascending A -->
+  <path d="M122 322
+           C150 250 168 180 188 128
+           C198 102 210 90 220 90
+           C210 90 204 118 204 150
+           C204 198 192 258 168 322
+           Z" fill="#0346AE"/>
+  <path d="M318 322
+           C290 250 272 180 252 128
+           C242 102 230 90 220 90
+           C230 90 236 118 236 150
+           C236 198 248 258 272 322
+           Z" fill="#0346AE"/>
+  <!-- Soft inner fill -->
+  <path d="M190 300 C196 240 206 175 214 130 C217 112 219 100 220 96
+           C221 100 223 112 226 130 C234 175 244 240 250 300 Z" fill="#4A7BC8" opacity="0.45"/>
+  <!-- Central orange arrow with diamond tip -->
+  <path d="M220 88 L246 152 L220 298 L194 152 Z" fill="#F58C49"/>
+  <path d="M220 88 L246 152 L220 172 L194 152 Z" fill="#E96A24"/>
+  <!-- Rounded base -->
+  <path d="M148 308 C172 332 268 332 292 308 C270 334 170 334 148 308 Z" fill="#062F75"/>
+  <!-- Accent dots -->
+  <circle cx="368" cy="162" r="13" fill="#F58C49"/>
+  <circle cx="82" cy="258" r="6.5" fill="#9BB8E8"/>
+</svg>
