@@ -1389,3 +1389,13 @@ a:hover {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+
+/* V2 preview polish */
+section[id] {
+  scroll-margin-top: calc(var(--header-h) + 28px);
+}
+
+.footer-links a {
+  white-space: nowrap;
+}
